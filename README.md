@@ -12,19 +12,19 @@ This project scrapes job listings from online job boards, stores them in CSV and
 
 ## Project Structure
 
+```
 job-monitor/
 ├── src/
-│   ├── utils.py                # Fetch URL helper
-│   ├── scrapers/
-│   │   ├── remoteok_scraper.py # RemoteOK API scraper
-│   │   ├── quotes_scraper.py   # Sample scraper using BeautifulSoup for testing the workflow
-│   ├── storage/
-│   │   ├── csv_storage.py       # CSV storage
-│   │   └── db_storage.py        # SQLite storage
-├── run_monitor.py              # Main script to run the scraper
-└── data/                       # Stores jobs.csv and jobs.db
-
-
+│ ├── utils.py # Fetch URL helper
+│ ├── scrapers/
+│ │ ├── remoteok_scraper.py # RemoteOK API scraper
+│ │ ├── quotes_scraper.py # Sample scraper using BeautifulSoup for testing the workflow
+│ ├── storage/
+│ │ ├── csv_storage.py # CSV storage
+│ │ └── db_storage.py # SQLite storage
+├── run_monitor.py # Main script to run the scraper
+└── data/ # Stores jobs.csv and jobs.db
+```
 
 ## Usage
 
