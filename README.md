@@ -27,8 +27,7 @@ job-monitor/
 ```
 
 ## Usage
-
-1. Install dependencies:
+Install dependencies:
 
 pip install requests beautifulsoup4 lxml
 
