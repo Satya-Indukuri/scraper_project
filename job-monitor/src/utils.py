@@ -5,7 +5,7 @@ def fetch_url(url, timeout=10):
         "User-Agent": "Mozilla/5.0 (JobMonitorBot/1.0; +https://example.com)"
     }
     try:
-        response = requests.get(url, timeout=timeout)
+        response = requests.get(url, headers=headers, timeout=timeout)
         response.raise_for_status() # raises HTTPError if not 200
         print(f"[INFO] Fetched {url}: ({response.status_code})")
         return response.text

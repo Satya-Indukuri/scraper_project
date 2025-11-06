@@ -20,6 +20,7 @@ class DBStorage:
                     location TEXT,
                     url TEXT,
                     posted_date TEXT,
+                    salary TEXT,
                     source TEXT,
                     UNIQUE(title, company)
                 );
@@ -37,13 +38,14 @@ class DBStorage:
             for job in jobs:
                 try:
                     cursor.execute("""
-                    INSERT INTO jobs (title, company, location, url, posted_date, source) 
-                    VALUES (?,?,?,?,?,?) """,(
+                    INSERT INTO jobs (title, company, location, url, posted_date, salary, source) 
+                    VALUES (?,?,?,?,?,?,?) """,(
                         job.get('title'),
                         job.get("company"),
                         job.get("location"),
                         job.get("url"),
                         job.get("posted_date"),
+                        job.get("salary"),
                         job.get("source")
                     ))
                     added_count += 1
