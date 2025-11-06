@@ -31,12 +31,13 @@ Install dependencies:
 
 pip install requests beautifulsoup4 lxml
 
-Run the monitor:
-Go to job-monitor directory and run
+Run the monitor(Go to job-monitor directory and run):
+
 "python -m run_monitor"
+
 Check stored jobs in data/jobs.csv or data/jobs.db.
 
-Notes
+Notes: 
 RemoteOK jobs are fetched via their API because most jobs are dynamically loaded via JavaScript and cannot be reliably scraped with BeautifulSoup from raw HTML.
 (quotes_scraper is a sample scraper i made using BeautifulSoup for testing the workflow.)
 
